@@ -1,0 +1,63 @@
+
+/* ============ CAROUSEL ================ */
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel__container {
+    width: 600%;
+    display: flex;
+    transition: transform .5s ease-in-out;
+}
+
+.carousel__img {
+    width: calc(100% / 6);
+    max-height: 50vh;
+    object-fit: contain;
+    margin: 0em 0.5em;
+}
+
+.carousel__angle {
+    cursor: pointer;
+    position: absolute;
+    background-color: var(--orange-color);
+    padding: 8px 12px;
+    border-radius: 100%;
+    color: var(--white-color);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel__angle--left {
+    transform: translateY(-50%) scaleX(-1);
+    left: 0%;
+}
+
+.carousel__angle--right {
+    right: 0%;
+}
+
+.carousel__indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.carousel__indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 80px;
+    background-color: black;
+}
+
+.carousel__indicator--active {
+    border: 2px solid white;
+}

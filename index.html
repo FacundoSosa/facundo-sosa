@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- App wrapper -->
+    <div class="wrapper">
+        <!-- Header -->
+        <header id="header" class="container container--y header">
+            <div class="header__container">
+                <img src="" alt="logo.svg" class="logo">
+                <button id="menu" class="header__menu">
+                    <!-- <img src="" alt="menu.svg"> -->
+                    =
+                </button>
+            </div>
+            <!-- Nav -->
+            <nav id="nav" class="container container--y header__nav">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__link bold" href="">INICIO</a></li>
+                    <li class="nav__li"><a class="nav__link bold" href="">GALERÍA</a></li>
+                    <li class="nav__li"><a class="nav__link bold" href="">SOBRE MÍ</a></li>
+                    <li class="nav__li"><a class="nav__link bold" href="">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container container--flex hero__container">
+                    <div class="hero__text container container--y container--flex text-center">
+                        <h6 class="heading--s bold">Subheadline</h6>
+                        <h1 class="heading--xl extra-bold">Main headline</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, incidunt magnam molestias quaerat cons.</p>
+                    </div>
+                    <button class="btn btn--orange">LEER MÁS</button>
+                </div>
+                <!-- Promo -->
+                <section class="container container--y promo">
+                    <div class="container--flex promo__container text-center border-rounded">
+                        <div class="container container--y container--flex promo__text">
+                            <h6 class="heading--xs bold">Oferta de Apertura</h6>
+                            <h3 class="heading--xl bold">¡PRIMER CLASE GRATIS!</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, numquam eum! Illum, ea exercitationem eius accusantium.</p>
+                        </div>
+                        <div class="container container--y container--flex promo__buttons">
+                            <button class="btn btn--transparent">SEGUIR LEYENDO</button>
+                            <button class="btn btn--white">RESERVAR AHORA</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- Gallery -->
+            <section class="container container--flex gallery">
+                <h6 class="heading--s heading--orange bold text-center">Galería</h6>
+                <div class="carousel">
+                    <div class="carousel__wrapper">
+                        <div class="carousel__container">
+                            <img class="carousel__img border-rounded" src="./assets/images/concert-1.png" alt="carousel-img-1">
+                            <img class="carousel__img border-rounded" src="./assets/images/concert-2.png" alt="carousel-img-2">
+                            <img class="carousel__img border-rounded" src="./assets/images/concert-3.png" alt="carousel-img-3">
+                            <img class="carousel__img border-rounded" src="./assets/images/concert-4.png" alt="carousel-img-4">
+                            <img class="carousel__img border-rounded" src="./assets/images/concert-5.png" alt="carousel-img-5">
+                            <img class="carousel__img border-rounded" src="./assets/images/concert-6.png" alt="carousel-img-6">
+                        </div>
+                    </div>
+                    <img id="carousel-left" class="carousel__angle carousel__angle--left" src="./assets/icons/angle-icon.svg" alt="">
+                    <img id="carousel-right" class="carousel__angle carousel__angle--right" src="./assets/icons/angle-icon.svg" alt="">
+                </div>
+            </section>
+            <!-- About -->
+            <section class="container container--flex about">
+                <div class="container--flex about__container">
+                    <h6 class="heading--s heading--orange bold">Sobre mí</h6>
+                    <h1 class="heading--l heading--space extra-bold">Facundo Sosa</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo neque. Donec eget tincidunt eros. Fusce ornare arcu orci, sed imperdiet sem tincidunt eu. Vestibulum commodo felis turpis, condimentum vestibulum est ultrices vel. Suspendisse rutrum, metus et consectetur eleifend, purus elit cursus lorem, non venenatis nunc odio eget metus. Nam laoreet finibus massa, a facilisis neque mattis sit amet.
+                    Suspendisse rutrum, metus et consectetur eleifend, purus elit cursus lorem, non venenatis nunc odio eget metus. Nam laoreet finibus massa, a facilisis neque mattis sit amet.    
+                    </p>
+                    <button class="btn btn--orange">CONOCE MÁS</button>
+                </div>
+                <img class="img img--shadow about__img border-rounded" src="./assets/images/about-image.png" alt="about-img">
+            </section>
+            <!-- Contact -->
+            <section class="container container--flex contact">
+                <div class="container--flex contact__container">
+                    <h6 class="heading--s heading--orange extra-bold">Contáctame</h6>
+                    <h6 class="heading--l heading--space extra-bold">¿Querés reservar una clase? Llená el formulario de acá abajo</h6>
+                    <form id="contact-form" class="container--flex contact__form">
+                        <label for="name">Nombre*</label>
+                        <input id="name" class="input contact__input" type="name" name="name">
+                        <label for="text">Teléfono*</label>
+                        <input id="phone-number" class="input contact__input" type="text" name="text">
+                        <label for="email">E-mail</label>
+                        <input id="email" class="input contact__input" type="email" name="email">
+                        <label for="textarea">Déjame tu mensaje</label>
+                        <textarea id="message" class="input contact__input" name="textarea" id="" cols="30" rows="8"></textarea>
+                        <button class="btn btn--orange">ENVIAR</button>
+                    </form>
+                </div>
+                <img class="img img--shadow contact__img border-rounded" src="./assets/images/contact-image.png" alt="contact-img.png">
+            </section>
+            <!-- Footer -->
+            <footer class="container--flex footer">
+                <section class="container container--y newsletter">
+                    <div class="container--flex newsletter__container border-rounded">
+                        <h6 class="newsletter__heading semi-bold">¿Querés saber las últimas noticias? <span class="bold">¡Suscribite!</span></h6>
+                        <div class="container--flex newsletter__form">
+                            <input type="email" class="input border-rounded newsletter__input" placeholder="Ingresá tu e-mail">
+                            <button class="btn btn--dark">SUSCRIBIRSE</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="container container--flex footer__wrapper">
+                    <div class="container--flex footer__container">
+                        <div class="container--flex footer__contact">
+                            <h6 class="heading--s heading--orange heading--space bold">Contáctame</h6>
+                            <span>
+                                <img src="./assets/icons/phone-icon.svg" alt="phone-icon.svg">
+                                <p>+598 91 834 094</p>
+                            </span>
+                            <span>
+                                <img src="./assets/icons/envelope-icon.svg" alt="envelope-icon.svg">
+                                <p>facundososa676@gmail.com</p>
+                            </span>
+                        </div>
+                        <div class="container--flex footer__social">
+                            <h6 class="heading--s heading--orange heading--space bold">Redes sociales</h6>
+                            <div class="social__container">
+                                <a href=""><img src="./assets/icons/facebook.svg" alt="facebook.svg"></a>
+                                <a href=""><img src="./assets/icons/instagram.svg" alt="instagram.svg"></a>
+                                <a href=""><img src="./assets/icons/linkedin.svg" alt="linkedin.svg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    &copy; Facundo Sosa 2023
+                </div>
+            </footer>
+        </main>
+    </div>
+
+
+    <script type="module" src="/js/index.js"></script>
+</body>
+</html>

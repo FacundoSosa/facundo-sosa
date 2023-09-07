@@ -1,0 +1,22 @@
+
+
+/* ================== CONTACT FORM ===================== */
+
+.input {
+    outline: none;
+    color: var(--dark-color);
+    border: hidden;
+}
+
+.contact__input {
+    width: 100%;
+    font-size: 1em;
+    background-color: transparent;
+    padding-bottom: 0.5em;
+    border-bottom: solid 1px var(--dark-color);
+}
+
+.newsletter__input {
+    font-size: inherit;
+    padding: 0.5em;
+}

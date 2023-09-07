@@ -1,0 +1,65 @@
+
+/* ========== TYPOGRAPHY =========== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--darker-color);
+    font-size: 1.1em;
+    line-height: 1.3;
+}
+
+/* ======== FONT SIZE ========== */
+
+.heading--xs {
+    font-size: 1em;
+}
+
+.heading--s {
+    font-size: 1.2em;
+}
+
+.heading--l {
+    font-size: 1.8em;
+}
+
+.heading--xl {
+    font-size: 2.5em;
+}
+
+.nav__link {
+    font-size: 0.8em;
+}
+
+
+/* ========= FONT WEIGHT ============ */
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra-bold {
+    font-weight: 800;
+}
+
+/* ============= TEXT SPACING =========== */
+
+.heading--space {
+    margin-bottom: 0.5em;
+}
+
+/* ========= TEXT COLOR =========== */
+
+.heading--orange {
+    color: var(--orange-color);
+}
+
+/* =========== ALIGNMENT ========== */
+
+.text-center {
+    text-align: center;
+}
+

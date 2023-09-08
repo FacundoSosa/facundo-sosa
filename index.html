@@ -95,16 +95,16 @@
                 <div class="container--flex contact__container">
                     <h6 class="heading--s heading--orange extra-bold">Contáctame</h6>
                     <h6 class="heading--l heading--space extra-bold">¿Querés reservar una clase? Llená el formulario de acá abajo</h6>
-                    <form id="contact-form" class="container--flex contact__form">
+                    <form id="contact-form" class="container--flex contact__form" action="./php/contact/contact.php" method="POST">
                         <label for="name">Nombre*</label>
-                        <input id="name" class="input contact__input" type="name" name="name">
+                        <input id="input" class="input contact__input" type="name" name="name" required>
                         <label for="text">Teléfono*</label>
-                        <input id="phone-number" class="input contact__input" type="text" name="text">
+                        <input id="input" class="input contact__input" type="text" name="phone" required>
                         <label for="email">E-mail</label>
-                        <input id="email" class="input contact__input" type="email" name="email">
+                        <input id="input" class="input contact__input" type="email" name="email">
                         <label for="textarea">Déjame tu mensaje</label>
-                        <textarea id="message" class="input contact__input" name="textarea" id="" cols="30" rows="8"></textarea>
-                        <button class="btn btn--orange">ENVIAR</button>
+                        <textarea id="input" class="input contact__input" name="message" cols="30" rows="8"></textarea>
+                        <button type="submit" class="btn btn--orange">ENVIAR</button>
                     </form>
                 </div>
                 <img class="img img--shadow contact__img border-rounded" src="./assets/images/contact-image.png" alt="contact-img.png">

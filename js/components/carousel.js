@@ -14,35 +14,31 @@ const handleMovement = (position, imageSize) => {
     carouselContainer.style.transform = `translateX(${translate}%)`    
 }
 
-carouselRight.addEventListener("click", () => {
-    counter++;
-    
+const checkWindowSize = () => {
     if (window.innerWidth > 600 && window.innerWidth < 837) {
         imageSize = -100 / 4;
         limit = 4;
     } else if (window.innerWidth < 600) {
         imageSize = -100 / 6;
         limit = 5;
+    } else {
+        imageSize = -100 / 6;
+        limit = 3;
     }
-    
+}
+
+carouselRight.addEventListener("click", () => {
+    counter++;
+    checkWindowSize()
     if (counter > limit) {
         counter = 0;
     }
-
-    
     handleMovement(counter, imageSize)
 });
+
 carouselLeft.addEventListener("click", () => {
     counter--;
-    
-    if (window.innerWidth > 600 && window.innerWidth < 837) {
-        imageSize = -100 / 4;
-        limit = 4;
-    } else if (window.innerWidth < 600) {
-        imageSize = -100 / 6;
-        limit = 5;
-    }
-
+    checkWindowSize()
     if (counter < 0) {
         counter = limit;
     }
@@ -50,19 +46,8 @@ carouselLeft.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-    if (window.innerWidth > 600 && window.innerWidth < 837) {
-        imageSize = -100 / 4;
-        limit = 4;
-        counter = 0;
-    } else if (window.innerWidth < 600) {
-        imageSize = -100 / 6;
-        limit = 5;
-        counter = 0;
-    } else {
-        imageSize = -100 / 6;
-        limit = 3;
-        counter = 0;
-    }
+    checkWindowSize()
+    counter = 0;
     handleMovement(counter, imageSize)
 })
 

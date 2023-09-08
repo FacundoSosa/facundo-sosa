@@ -1,30 +1,71 @@
+const expressions = {
+    name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	phone: /^\d{9,14}$/, // 9 a 14 numeros.
+}
+
+const data = {
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+}
+
+const required = {
+    name: false,
+    phone: false,
+}
+
 const form = document.getElementById("contact-form");
-const name = document.getElementById("name");
-const phone = document.getElementById("phone-number");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
+const inputs = document.querySelectorAll("#input");
+
+const validateForm = (e) => {
+    switch (e.target.name) {
+        case "name":
+            validateInput(expressions.name, e.target, "name")
+        break;
+        case "phone":
+            validateInput(expressions.phone, e.target, "phone")
+        break;
+        case "email":
+            data.email = e.target.value;
+        break;
+        case "message":
+            data.message = e.target.value;
+        break;
+    }
+}
+
+const validateInput = (expression, input, field) => {
+    if (expression.test(input.value)) {
+        console.log("valid");
+        data[field] = input.value;
+        required[field] = true;
+    } else {
+        console.log("invalid");
+    }
+}
+
+const submit = () => {
+    if (required.name && required.phone) {
+        form.reset();
+        required.name = false;
+        required.phone = false;
+        console.log(data);
+        data.email = "";
+        data.message = "";
+    } else {
+        console.log("error message");
+    }
+}
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("submited");
+    submit();
 })
 
-name.addEventListener("change", (e) => {
-    const value = e.target.value;
-    console.log(value);
+inputs.forEach((input) => {
+    input.addEventListener("keyup", validateForm);
+    input.addEventListener("blur", validateForm);
 })
 
-phone.addEventListener("change", (e) => {
-    const value = e.target.value;
-    console.log(value);
-})
 
-email.addEventListener("change", (e) => {
-    const value = e.target.value;
-    console.log(value);
-})
-
-message.addEventListener("change", (e) => {
-    const value = e.target.value;
-    console.log(value);
-})

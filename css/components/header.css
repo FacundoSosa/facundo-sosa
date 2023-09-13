@@ -5,6 +5,8 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
 }
 
 .header::before {
@@ -19,6 +21,7 @@
     transform: scaleY(0);
     transform-origin: top;
     transition: transform .3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .header--scroll::before{
@@ -31,6 +34,10 @@
     align-items: center;
 }
 
-.logo {
+.header__logo {
     margin-right: auto;
+    display: flex;
+    color: var(--white-color);
+    gap: 0.2em;
+    text-decoration: none;
 }

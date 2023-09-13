@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: var(--white-color);
 }
@@ -21,6 +25,10 @@ body {
 .container--y {
     padding-top: 0%;
     padding-bottom: 0%;
+}
+
+.header__nav {
+    padding-top: 3em; /* Esta clase la pongo acá asi pisa a container--y */
 }
 
 .container--flex {

@@ -2,11 +2,15 @@
 .header__nav {
     background-color: var(--dark-color-transparent);
     position: absolute;
+    top: 0%;
     right: 0%;
     left: 0%;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .nav__li {
@@ -23,16 +27,15 @@
     content: "";
     display: block;
     background-color: var(--white-color);
-    height: 3px;
+    height: 2.5px;
     width: 100%;
-    /* border-radius: 0.5px; */
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition: transform .3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .2s ease-in-out;
 }
 
 .nav__link:hover::after {
-    transform: scaleY(1);
+    transform: scaleX(1);
 }
 
 .nav--active {

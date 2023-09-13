@@ -7,61 +7,67 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <!-- CSS links -->
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icons/logo.svg">
+    <title>Facundo Sosa | Clases de guitarra</title>
 </head>
 <body>
     <!-- App wrapper -->
     <div class="wrapper">
         <!-- Header -->
-        <header id="header" class="container container--y header">
+        <header id="header" class="container header">
             <div class="header__container">
-                <img src="" alt="logo.svg" class="logo">
-                <button id="menu" class="header__menu">
-                    <!-- <img src="" alt="menu.svg"> -->
-                    =
+                <a href="#hero" class="header__logo">
+                    <img src="./assets/icons/logo.svg" alt="logo.svg">
+                    <span>
+                        <p class="header__text italic light">Clases de guitarra</p>
+                        <h1 class="heading--m bold"><span class="heading--orange">Facundo</span>Sosa.</h1>
+                    </span>
+                </a>
+                <button id="menu" class="btn header__menu">
+                    <img src="./assets/icons/menu.svg" alt="menu.svg">
                 </button>
             </div>
             <!-- Nav -->
-            <nav id="nav" class="container container--y header__nav">
+            <nav id="nav" class="header__nav container container--y">
                 <ul class="nav__ul">
-                    <li class="nav__li"><a class="nav__link bold" href="">INICIO</a></li>
-                    <li class="nav__li"><a class="nav__link bold" href="">GALERÍA</a></li>
-                    <li class="nav__li"><a class="nav__link bold" href="">SOBRE MÍ</a></li>
-                    <li class="nav__li"><a class="nav__link bold" href="">CONTACTO</a></li>
+                    <li class="nav__li"><a class="nav__link bold" href="#hero">INICIO</a></li>
+                    <li class="nav__li"><a class="nav__link bold" href="#gallery">GALERÍA</a></li>
+                    <li class="nav__li"><a class="nav__link bold" href="#about">SOBRE MÍ</a></li>
+                    <li class="nav__li"><a class="nav__link bold" href="#contact">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <!-- Hero -->
-            <section class="hero">
+            <section id="hero" class="hero">
                 <div class="container container--flex hero__container">
                     <div class="hero__text container container--y container--flex text-center">
-                        <h6 class="heading--s bold">Subheadline</h6>
-                        <h1 class="heading--xl extra-bold">Main headline</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, incidunt magnam molestias quaerat cons.</p>
+                        <h1 class="heading--xl extra-bold">¡Descubre tu potencial!</h1>
+                        <p>¿Estás estancado con la guitarra o no sabés por donde empezar? <span class="bold">¡Estoy acá para guiarte!</span> Contáctame ahora y empezá tu camino como guitarrista.</p>
                     </div>
-                    <button class="btn btn--orange">LEER MÁS</button>
+                    <button class="btn btn--orange"><a href="#promo">LEER MÁS</a></button>
                 </div>
                 <!-- Promo -->
-                <section class="container container--y promo">
+                <section id="promo" class="container container--y promo">
                     <div class="container--flex promo__container text-center border-rounded">
                         <div class="container container--y container--flex promo__text">
                             <h6 class="heading--xs bold">Oferta de Apertura</h6>
                             <h3 class="heading--xl bold">¡PRIMER CLASE GRATIS!</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, numquam eum! Illum, ea exercitationem eius accusantium.</p>
+                            <p>Reservando ahora mismo por la web, obtenés tu primer <span class="bold">clase gratis.</span> No dejes pasar la oportunidad y contáctame ahora.</p>
                         </div>
                         <div class="container container--y container--flex promo__buttons">
-                            <button class="btn btn--transparent">SEGUIR LEYENDO</button>
-                            <button class="btn btn--white">RESERVAR AHORA</button>
+                            <button class="btn btn--transparent"><a href="#about">SEGUIR LEYENDO</a></button>
+                            <button class="btn btn--white"><a href="#contact">RESERVAR AHORA</a></button>
                         </div>
                     </div>
                 </section>
             </section>
             <!-- Gallery -->
-            <section class="container container--flex gallery">
+            <section id="gallery" class="container container--flex gallery">
                 <h6 class="heading--s heading--orange bold text-center">Galería</h6>
                 <div class="carousel">
                     <div class="carousel__wrapper">
@@ -79,23 +85,24 @@
                 </div>
             </section>
             <!-- About -->
-            <section class="container container--flex about">
+            <section id="about" class="container container--flex about">
                 <div class="container--flex about__container">
                     <h6 class="heading--s heading--orange bold">Sobre mí</h6>
                     <h1 class="heading--l heading--space extra-bold">Facundo Sosa</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed leo neque. Donec eget tincidunt eros. Fusce ornare arcu orci, sed imperdiet sem tincidunt eu. Vestibulum commodo felis turpis, condimentum vestibulum est ultrices vel. Suspendisse rutrum, metus et consectetur eleifend, purus elit cursus lorem, non venenatis nunc odio eget metus. Nam laoreet finibus massa, a facilisis neque mattis sit amet.
-                    Suspendisse rutrum, metus et consectetur eleifend, purus elit cursus lorem, non venenatis nunc odio eget metus. Nam laoreet finibus massa, a facilisis neque mattis sit amet.    
-                    </p>
-                    <button class="btn btn--orange">CONOCE MÁS</button>
+                    <p>Hola soy Facundo Sosa, y estoy para ayudarte en tu viaje como guitarrista.</p>
+                    <p>No importa si estas empezando o partiendo desde cero sin mucha idea, mi enfoque va más allá de enseñarte canciones y técnicas. Quiero que seas capaz de desarrollar tus propias habilidades para aprender lo que quieras por vos mismo.</p>
+                    <p>Ya sea que quieras expresarte, o si simplemente deseas aprender las canciones que te gustan para tocar con tus amigos, estás en el lugar adecuado.</p>
+                    <p>No importa si tus sueños son grandes o pequeños, juntos los haremos realidad. ¡Contáctame hoy mismo para empezar tu viaje musical y descargá gratis mi manual para guitarristas principiantes! Espero verte pronto en una de mis clases.</p>
+                    <button class="btn btn--orange">DESCARGAR</button>
                 </div>
                 <img class="img img--shadow about__img border-rounded" src="./assets/images/about-image.png" alt="about-img">
             </section>
             <!-- Contact -->
-            <section class="container container--flex contact">
+            <section id="contact" class="container container--flex contact">
                 <div class="container--flex contact__container">
                     <h6 class="heading--s heading--orange extra-bold">Contáctame</h6>
                     <h6 class="heading--l heading--space extra-bold">¿Querés reservar una clase? Llená el formulario de acá abajo</h6>
-                    <form id="contact-form" class="container--flex contact__form" action="./php/contact/contact.php" method="POST">
+                    <form id="contact-form" class="container--flex contact__form" action="contact.php" method="POST">
                         <label for="name">Nombre*</label>
                         <input id="input" class="input contact__input" type="name" name="name" required>
                         <label for="text">Teléfono*</label>
@@ -115,10 +122,10 @@
                 <section class="container container--y newsletter">
                     <div class="container--flex newsletter__container border-rounded">
                         <h6 class="newsletter__heading semi-bold">¿Querés saber las últimas noticias? <span class="bold">¡Suscribite!</span></h6>
-                        <div class="container--flex newsletter__form">
+                        <form class="container--flex newsletter__form">
                             <input type="email" class="input border-rounded newsletter__input" placeholder="Ingresá tu e-mail">
                             <button class="btn btn--dark">SUSCRIBIRSE</button>
-                        </div>
+                        </form>
                     </div>
                 </section>
                 <div class="container container--flex footer__wrapper">

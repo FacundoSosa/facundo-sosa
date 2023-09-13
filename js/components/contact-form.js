@@ -45,9 +45,8 @@ const validateInput = (expression, input, field) => {
     }
 }
 
-const submit = () => {
+/* const submit = () => {
     if (required.name && required.phone) {
-        form.reset();
         required.name = false;
         required.phone = false;
         console.log(data);
@@ -56,11 +55,10 @@ const submit = () => {
     } else {
         console.log("error message");
     }
-}
+} */
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    submit();
+    form.reset();
 })
 
 inputs.forEach((input) => {

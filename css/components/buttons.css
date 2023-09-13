@@ -1,7 +1,6 @@
 .btn {
-    background-color: var(--dark-color);
+    background-color: transparent;
     color: var(--white-color);
-    padding: 0.5em 1em;
     border-radius: 4px;
     border: none;
     outline: none;
@@ -12,9 +11,15 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+.btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .btn--orange {
     background-color: var(--orange-color);
+    padding: 0.5em 1em;
 }
 
 .btn--orange:hover {
@@ -25,6 +30,7 @@
 .btn--white {
     background-color: var(--white-color);
     color: var(--orange-color);
+    padding: 0.5em 1em;
 }
 
 .btn--white:hover {
@@ -32,9 +38,15 @@
     color: var(--white-color);
 }
 
+.btn--dark {
+    background-color: var(--dark-color);
+    padding: 0.5em 1em;
+}
+
 .btn--transparent {
     background-color: transparent;
     border: solid 1px var(--white-color);
+    padding: 0.5em 1em;
 }
 
 .btn--transparent:hover {

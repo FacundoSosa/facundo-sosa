@@ -18,6 +18,10 @@ body {
     font-size: 1.2em;
 }
 
+.heading--m {
+    font-size: 1.5em;
+}
+
 .heading--l {
     font-size: 1.8em;
 }
@@ -33,6 +37,10 @@ body {
 
 /* ========= FONT WEIGHT ============ */
 
+.light {
+    font-weight: 300;
+}
+
 .semi-bold {
     font-weight: 600;
 }
@@ -43,6 +51,10 @@ body {
 
 .extra-bold {
     font-weight: 800;
+}
+
+.italic {
+    font-style: italic
 }
 
 /* ============= TEXT SPACING =========== */
@@ -61,5 +73,12 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+/* =========== SPECIFIC ============ */
+
+.header__text {
+    font-size: 0.8em;
+    transform: translateY(7px);
 }
 

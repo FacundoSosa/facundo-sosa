@@ -4,7 +4,7 @@
 /* =========== MEDIA QUERIES =========== */
 
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 444px) {
     .container {
         padding: 8em 10%;
     }
@@ -12,6 +12,10 @@
     .container--y {
         padding-top: 0%;
         padding-bottom: 0%;
+    }
+
+    .header__nav {
+        padding-top: 3em;
     }
 
     .img {

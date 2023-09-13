@@ -7,7 +7,7 @@ const carouselRight = document.getElementById("carousel-right");
 
 let counter = 0;
 let imageSize = -100 / 6;
-let limit = 3;
+let limit = 2;
 
 const handleMovement = (position, imageSize) => {
     let translate = position * imageSize;
@@ -15,15 +15,15 @@ const handleMovement = (position, imageSize) => {
 }
 
 const checkWindowSize = () => {
-    if (window.innerWidth > 600 && window.innerWidth < 837) {
+    if (window.innerWidth > 768 && window.innerWidth < 1024) {
         imageSize = -100 / 4;
-        limit = 4;
-    } else if (window.innerWidth < 600) {
+        limit = 3;
+    } else if (window.innerWidth < 768) {
         imageSize = -100 / 6;
-        limit = 5;
+        limit = 4;
     } else {
         imageSize = -100 / 6;
-        limit = 3;
+        limit = 2;
     }
 }
 

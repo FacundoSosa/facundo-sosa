@@ -8,4 +8,6 @@ window.addEventListener("scroll", () => {
     } else {
         header.classList.remove("header--scroll")
     }
+    console.log(window.scrollY);
 })
+

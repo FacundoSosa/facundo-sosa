@@ -1,0 +1,14 @@
+/* =============== ANIMATIONS ============= */
+
+
+.fade-in {
+    animation: fade-in 800ms ease-in-out forwards;
+}
+
+.show-from-top {
+    animation: show-from-top 800ms ease-in-out forwards;
+}
+
+.show-from-bottom {
+    animation: show-from-bottom 800ms ease-in-out forwards;  
+}

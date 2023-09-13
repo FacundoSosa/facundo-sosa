@@ -18,7 +18,7 @@
     <!-- App wrapper -->
     <div class="wrapper">
         <!-- Header -->
-        <header id="header" class="container header">
+        <header id="header" class="container header show-from-top">
             <div class="header__container">
                 <a href="#hero" class="header__logo">
                     <img src="./assets/icons/logo.svg" alt="logo.svg">
@@ -44,22 +44,24 @@
         <main>
             <!-- Hero -->
             <section id="hero" class="hero">
-                <div class="container container--flex hero__container">
-                    <div class="hero__text container container--y container--flex text-center">
-                        <h1 class="heading--xl extra-bold">¡Descubre tu potencial!</h1>
-                        <p>¿Estás estancado con la guitarra o no sabés por donde empezar? <span class="bold">¡Estoy acá para guiarte!</span> Contáctame ahora y empezá tu camino como guitarrista.</p>
+                <div class="container container--flex hero__wrapper">
+                    <div class="hero__container container container--flex fade-in">
+                        <div class="hero__text text-center">
+                            <h1 class="heading--xl extra-bold">¡Descubre tu potencial!</h1>
+                            <p>¿Estás estancado con la guitarra o no sabés por donde empezar? <span class="bold">¡Estoy acá para guiarte!</span> Contáctame ahora y empezá tu camino como guitarrista.</p>
+                        </div>
+                        <button class="btn btn--orange"><a href="#promo">LEER MÁS</a></button>
                     </div>
-                    <button class="btn btn--orange"><a href="#promo">LEER MÁS</a></button>
                 </div>
                 <!-- Promo -->
                 <section id="promo" class="container container--y promo">
                     <div class="container--flex promo__container text-center border-rounded">
-                        <div class="container container--y container--flex promo__text">
+                        <div class="container container--y container--flex promo__text show-from-bottom">
                             <h6 class="heading--xs bold">Oferta de Apertura</h6>
                             <h3 class="heading--xl bold">¡PRIMER CLASE GRATIS!</h6>
                             <p>Reservando ahora mismo por la web, obtenés tu primer <span class="bold">clase gratis.</span> No dejes pasar la oportunidad y contáctame ahora.</p>
                         </div>
-                        <div class="container container--y container--flex promo__buttons">
+                        <div class="container container--y container--flex promo__buttons show-from-bottom">
                             <button class="btn btn--transparent"><a href="#about">SEGUIR LEYENDO</a></button>
                             <button class="btn btn--white"><a href="#contact">RESERVAR AHORA</a></button>
                         </div>
@@ -72,12 +74,11 @@
                 <div class="carousel">
                     <div class="carousel__wrapper">
                         <div class="carousel__container">
-                            <img class="carousel__img border-rounded" src="./assets/images/concert-1.png" alt="carousel-img-1">
-                            <img class="carousel__img border-rounded" src="./assets/images/concert-2.png" alt="carousel-img-2">
-                            <img class="carousel__img border-rounded" src="./assets/images/concert-3.png" alt="carousel-img-3">
-                            <img class="carousel__img border-rounded" src="./assets/images/concert-4.png" alt="carousel-img-4">
-                            <img class="carousel__img border-rounded" src="./assets/images/concert-5.png" alt="carousel-img-5">
-                            <img class="carousel__img border-rounded" src="./assets/images/concert-6.png" alt="carousel-img-6">
+                            <img class="carousel__img border-rounded" src="./assets/images/concert-1.jpeg" alt="carousel-img-2">
+                            <img class="carousel__img border-rounded" src="./assets/images/concert-2.jpeg" alt="carousel-img-3">
+                            <img class="carousel__img border-rounded" src="./assets/images/bass-image.jpeg" alt="carousel-img-4">
+                            <img class="carousel__img border-rounded" src="./assets/images/guitar-image.jpg" alt="guitar-image.jpg">
+                            <img class="carousel__img border-rounded" src="./assets/images/rehearsal.jpeg" alt="carousel-img-5">
                         </div>
                     </div>
                     <img id="carousel-left" class="carousel__angle carousel__angle--left" src="./assets/icons/angle-icon.svg" alt="">

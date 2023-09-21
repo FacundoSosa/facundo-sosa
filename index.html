@@ -11,7 +11,7 @@
     <!-- CSS links -->
     <link rel="stylesheet" href="./css/main.css">
 
-    <link rel="icon" type="image/x-icon" href="./assets/icons/logo.svg">
+    <link rel="icon" href="./assets/icons/logo.svg">
     <title>Facundo Sosa | Clases de guitarra</title>
 </head>
 <body>
@@ -91,16 +91,16 @@
                     <h6 class="heading--s heading--orange bold">Sobre mí</h6>
                     <h1 class="heading--l heading--space extra-bold">Facundo Sosa</h1>
                     <p>Hola soy Facundo Sosa, y estoy para ayudarte en tu viaje como guitarrista.</p>
-                    <p>No importa si estas empezando o partiendo desde cero sin mucha idea, mi enfoque va más allá de enseñarte canciones y técnicas. Quiero que seas capaz de desarrollar tus propias habilidades para aprender lo que quieras por vos mismo.</p>
+                    <p>No importa si estas empezando o partiendo desde cero sin mucha idea, mi enfoque va más allá de enseñarte canciones y técnicas. <span class="bold">Quiero que seas capaz de desarrollar tus propias habilidades para aprender lo que quieras por vos mismo.</span></p>
                     <p>Ya sea que quieras expresarte, o si simplemente deseas aprender las canciones que te gustan para tocar con tus amigos, estás en el lugar adecuado.</p>
-                    <p>No importa si tus sueños son grandes o pequeños, juntos los haremos realidad. ¡Contáctame hoy mismo para empezar tu viaje musical y descargá gratis mi manual para guitarristas principiantes! Espero verte pronto en una de mis clases.</p>
-                    <button class="btn btn--orange">DESCARGAR</button>
+                    <p>No importa si tus sueños son grandes o pequeños, juntos los haremos realidad. ¡Contáctame hoy mismo para empezar tu viaje musical y <span class="bold">descargá gratis mi e-book "Manual para guitarristas principiantes"!</span> Espero verte pronto en una de mis clases.</p>
+                    <button class="btn btn--orange"><a href="./assets/resources/Manual para guitarristas principiantes.pdf" download="Manual para guitarristas principiantes por Facundo Sosa">DESCARGAR E-BOOK GRATIS</a></button>
                 </div>
                 <img class="img img--shadow about__img border-rounded" src="./assets/images/about-image.png" alt="about-img">
             </section>
             <!-- Contact -->
-            <section id="contact" class="container container--flex contact">
-                <div class="container--flex contact__container">
+            <section class="container container--flex contact">
+                <div id="contact" class="container--flex contact__container">
                     <h6 class="heading--s heading--orange extra-bold">Contáctame</h6>
                     <h6 class="heading--l heading--space extra-bold">¿Querés reservar una clase? Llená el formulario de acá abajo</h6>
                     <form id="contact-form" class="container--flex contact__form" action="contact.php" method="POST">
@@ -110,7 +110,7 @@
                         <input id="input" class="input contact__input" type="text" name="phone" required>
                         <label for="email">E-mail</label>
                         <input id="input" class="input contact__input" type="email" name="email">
-                        <label for="textarea">Déjame tu mensaje</label>
+                        <label for="textarea">¿Por qué te gustaría aprender a tocar?</label>
                         <textarea id="input" class="input contact__input" name="message" cols="30" rows="8"></textarea>
                         <button type="submit" class="btn btn--orange">ENVIAR</button>
                     </form>

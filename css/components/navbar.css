@@ -21,6 +21,11 @@
 .nav__link {
     color: var(--white-color);
     text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.nav__link:hover {
+    color: var(--orange-color);
 }
 
 .nav__link::after {
@@ -31,11 +36,12 @@
     width: 100%;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .nav__link:hover::after {
     transform: scaleX(1);
+    background-color: var(--orange-color);
 }
 
 .nav--active {

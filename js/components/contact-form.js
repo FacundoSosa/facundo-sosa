@@ -37,11 +37,8 @@ const validateForm = (e) => {
 
 const validateInput = (expression, input, field) => {
     if (expression.test(input.value)) {
-        console.log("valid");
         data[field] = input.value;
         required[field] = true;
-    } else {
-        console.log("invalid");
     }
 }
 
@@ -58,7 +55,9 @@ const validateInput = (expression, input, field) => {
 } */
 
 form.addEventListener("submit", (e) => {
+    const completeMessage = `Correo del remitente: ${data.email}\nTeléfono: ${data.phone}\n${data.message}`;
     form.reset();
+    console.log(completeMessage);
 })
 
 inputs.forEach((input) => {
